@@ -22,17 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
       defaultValue:
         "في عالم يتغير بسرعة، لم يعد التعلم وحده كافيًا بل يجب أن تتميّز. منصة H ليست مجرد أداة تعليمية؛ إنها الجسر الذي يربط بين أحلامك والواقع.",
     }),
-    icons: {
-      icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
-      apple: [{ url: "/apple-icon.png" }],
-    },
   };
 }
 const HomePage = () => {
   const t = useTranslations("translation");
 
   return (
-    <article>
+    <>
       <HeroHome />
       <WhyDifferentSection />
       <Suspense fallback={<Loaders />}>
@@ -56,7 +52,7 @@ const HomePage = () => {
       <HowItWorksSection />
       <FaqSection />
       <GetStarted />
-    </article>
+    </>
   );
 };
 

@@ -44,18 +44,12 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: t("pages.Home", { defaultValue: "H Platform - الصفحة الرئيسية" }),
+
+    // ✅ هذا هو المفتاح المطلوب لـ <meta name="description">
     description: t("pages.Home_description", {
       defaultValue:
         "في عالم يتغير بسرعة، لم يعد التعلم وحده كافيًا بل يجب أن تتميّز. منصة H ليست مجرد أداة تعليمية؛ إنها الجسر الذي يربط بين أحلامك والواقع.",
     }),
-    icons: {
-      icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
-      apple: [{ url: "/apple-icon.png" }],
-    },
-    alternates: {
-      canonical: "https://h-platform.online", // ضع رابط موقعك هنا
-    },
-
     openGraph: {
       title: t("pages.Home"),
       description: t("pages.Home_description"),
