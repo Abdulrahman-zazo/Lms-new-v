@@ -1,0 +1,350 @@
+{
+  "translation": {
+    "HeroHome": {
+      "Home_title": "Where Learning Meets Potential",
+      "text1": "Unlock Your Child's Abilities with H Platform",
+      "text2": "In a rapidly changing world, learning alone is no longer enough – your children must excel. H Platform is more than just an educational tool; it's the bridge connecting your children's dreams to their capabilities, empowering them to build their academic and professional future with confidence.",
+      "text3": "Get a Free Session Now"
+    },
+    "Header": {
+      "Home": "Home",
+      "About": "About Us",
+      "Courses": "Courses",
+      "Curricula": "Curricula",
+      "offer": "Offers",
+      "FAQ": "FAQ",
+      "login": "Login",
+      "Register": "Register"
+    },
+    "why": {
+      "why_we": "Why Are We ",
+      "Differenet": "Different?",
+      "subtitle": "We are redefining e-learning in an innovative and distinctive way",
+      "key1": "Instant Support, No Waiting",
+      "value1": "Direct communication via WhatsApp with instructors for any inquiries or questions.",
+      "key2": "Expert Instructors",
+      "value2": "Combining deep knowledge with an engaging and interactive teaching style to deliver information effectively.",
+      "key3": "Learn New Skills",
+      "value3": "With an elite group of professional instructors who simplify complex concepts into enjoyable, easy-to-understand lessons for learners."
+    },
+    "Courses": {
+      "slogan": "We are always with you!💡",
+      "description": "No matter your child's role or goal, H Platform is specifically designed to suit them and support their educational journey and future skill development.",
+      "title": "Student or Teacher?",
+      "button1": "All Courses",
+      "button2": "Recorded",
+      "button3": "Online",
+      "button4": "Offers",
+      "more": "View More",
+      "Nocourse": " No courses added currently 😓",
+      "Course_info": "Course Information",
+      "comments": " Comments & Reviews ",
+      "what_we_learn": " What You Will Learn ",
+      "content_course": "Course Content ",
+      "requairment": " Course Requirements ",
+      "button_free": " Book a Free Session Now",
+      "noCourses": "No courses added currently, will be added soon "
+    },
+    "how-work": {
+      "title": "How Does H Platform Work?",
+      "feature1": "Browse Training Courses",
+      "content1": "Browse upcoming or standard courses, and watch introductory videos to help you choose what suits you.",
+      "button1": "Find the Right Course for You",
+      "feature2": "Create Your Profile",
+      "content2": "Easily register using Google or simple steps to create your account and profile on H Platform.",
+      "button2": " Get Started Now",
+      "feature3": "Book Your Spot Now",
+      "content3": "Communicate directly with the administration to book your spot and join your chosen course. ",
+      "button3": " Make Your Connection"
+    },
+    "Courses_card": {
+      "description": "About the Course:",
+      "comments_placeholder": "Leave a comment to help others know your opinion...",
+      "send": "Send",
+      "add_comments": "Add Comment",
+      "showless": "Show Less",
+      "showAll": "Show More",
+      "noComment": "No comments "
+    },
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "questions1": "What is H Platform?",
+      "content1": "H Platform is a smart educational platform specially designed for children and young learners to develop their foundational skills, foster their creative abilities, and build a strong academic base through interactive content and tailored training sessions.",
+      "questions2": "Can I try H Platform for free?",
+      "content2": "Yes! You can try free lessons from any course before subscribing.",
+      "questions3": "How can I register for H Platform?",
+      "content3": "Simply! Visit our website, choose the right course for your child, and register your account in minutes. A free session awaits you as a start.",
+      "questions4": "Does the platform offer technical support or educational consultations?",
+      "content4": "Absolutely. Our support team is always available to assist you, and we offer educational consultations to help you choose the most suitable path for your children's development.",
+      "questions5": "How do I choose the right level for my child?",
+      "content5": "Contact us to provide you with a level assessment test for any course you need."
+    },
+    "footer": {
+      "name": "H Platform",
+      "slogan": "Learn Smart and Start Your Journey Now",
+      "help_center": "Help Center",
+      "term": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "aboutus": "About Us",
+      "courses": "Courses",
+      "curricula": "Curricula"
+    },
+    "about-header": {
+      "title1": "With H Platform: Where Learning Begins and Never Stops.",
+      "title2": "H Platform is a community that guides your children towards excellence, providing them with the tools and knowledge to advance confidently in a rapidly changing world. We create a comprehensive digital learning experience that elevates their ambitions from idea to academic and skill-based achievement.",
+      "title3": " Join Us Today and Be Part of Their Learning Future."
+    },
+    "offer-header": {
+      "title1": "Special Educational Offers 🎁!",
+      "title2": " Benefit from our carefully designed educational packages to help your children achieve their goals flexibly and at a lower price! Choose the offer that suits your child's interests and start learning today.",
+      "title3": " Discover Offers and Choose What Suits You"
+    },
+    "offer": {
+      "title": " Offers Available Now 🎉",
+      "button": "Subscribe Now",
+      "lable": "The offer includes the following courses:",
+      "NoOffer": "No offers available now, an offer will be added soon "
+    },
+    "about": {
+      "title1": "Our Mission",
+      "description1": "To provide direct learning that fits your schedule, engaging content that sparks your children's curiosity, and personalized learning paths designed specifically for them.",
+      "title2": "Our Goal",
+      "description2": "At H Platform, we strive to make education a unique and impactful experience for your children by offering innovative, enjoyable, and accessible educational solutions for everyone – regardless of age, background, or geographical location.",
+      "title3": "Our Vision",
+      "description3": "We build a global community of young learners connected to knowledge and growth, where the latest technologies transform into life-changing educational experiences, opening doors to their future."
+    },
+    "map": {
+      "title1": "Start Your Child's Educational Journey Today ",
+      "with": "with",
+      "title2": "The future is in your children's hands; learn, grow, and achieve their dreams."
+    },
+    "course-header": {
+      "title1": "Our Courses for Children and Young Learners",
+      "title2": "H Platform is more than just an educational platform; it's a smart and inspiring experience combining advanced technology and the expertise of elite instructors to provide your children with real learning and development in their skills and abilities.",
+      "title3": " Browse Courses and Discover What Suits Your Children's Ambitions"
+    },
+    "curricula-header": {
+      "title1": "Educational Curricula at H Platform for Children",
+      "title2": "H Platform offers comprehensive educational curricula in core subjects like Arabic, English, Mathematics, and Mental Math, designed to suit all age and educational levels.",
+      "title3": "Join Us Today and Be Part of Your Children's Learning Future."
+    },
+    "curricula": {
+      "select": "Select Your Child's Curriculum and Academic Level: ",
+      "curricula_select": "Curriculum",
+      "curricula_select2": "Level",
+      "button": "Book a Session Now",
+      "empty": "Please choose a curriculum and level to view materials.",
+      "empty1": "No levels available for this curriculum.",
+      "empty2": "No materials available for this level."
+    },
+    "complaints": {
+      "title1": " Complaints and Suggestions ",
+      "title2": "We are always happy to hear from you! Whether you have a question about our courses, need quick technical support, or want to discuss partnership opportunities, our team is ready to assist you professionally and promptly.",
+      "title3": " Send Your Feedback or Suggestions Now"
+    },
+    "Get_started": {
+      "title1": " Educational Content Reaches Your Children Wherever They Are! ",
+      "title2": "Join now and don't miss the opportunity to receive the latest courses, curricula, and special offers designed specifically for your child's educational future.",
+      "title3": "Let Your Child Learn Smart, and Start Their Journey Now"
+    },
+    "complaints_system": {
+      "title": "Complaints and Suggestions",
+      "description": "We take your feedback seriously. Our dedicated complaints team will review your request and respond within 48 hours.",
+      "label1": "Full Name",
+      "label2": "Email Address",
+      "label3": "Phone Number",
+      "label5": "Send your feedback and contribute to improving our educational experience",
+      "label4": "Complaint or Suggestion Content"
+    },
+    "auth": {
+      "create_account": {
+        "Create_title": "Create Account",
+        "create_text": "Join us by filling out the information below.",
+        "Name": "Full Name",
+        "Password": "Password",
+        "phone": "Phone Number ",
+        "email": "Email Address",
+        "Register": "Register",
+        "Already": "Already have an account?",
+        "Login": "Login from here"
+      },
+      "Login_account": {
+        "Login_title": "Login",
+        "create_text": "Enter your login details to access your account.",
+        "Google": "Continue with Google",
+        "email": "Email Address",
+        "Password": "Password",
+        "forget": "Forgot password?",
+        "Login": "Login",
+        "noAccount": "Don't have an account? ",
+        "Register": " Register here"
+      },
+      "forget_password": {
+        "forget_title": "Password Recovery",
+        "forget_text": "Enter your email to recover your password.",
+        "email": "Email Address",
+        "next": "Next",
+        "Remembered": "Remembered password?",
+        "Login": "Login from here",
+        "code": "Enter the code sent to your email",
+        "Verification": "Verification Code",
+        "digit": "Enter the 6-digit code here",
+        "resend": "Didn't receive the code?",
+        "new_password_text": "Enter your new password below",
+        "new_password": "New Password",
+        "new_password2": "Confirm New Password",
+        "confirm": "Confirm",
+        "resending": "Resending...",
+        "code_ex": "Code expires in 10 minutes."
+      }
+    },
+    "buttons": {
+      "btn-details": "Details",
+      "eroll": "Book a Free Session Now 🚀!"
+    },
+    "error": {
+      "back": "Back to Home Page",
+      "noInternet": " 😓 No internet connection",
+      "noInternet2": "An error occurred while loading data, please check your network and try again.",
+      "data": "An error occurred while loading data. Please try again later.",
+      "offline": "No internet connection",
+      "selectStage": "Select Academic Level",
+      "Nostage": "No Levels"
+    },
+    "Instructor": {
+      "title1": " Are you a teacher or trainer? 🎓",
+      "title2": "Share your knowledge with thousands of learners! If you wish to offer courses or training content on our platform, we'd be happy to collaborate with you.",
+      "title3": "Contact Us"
+    },
+    "userMenu": {
+      "join": "Join Us as an Instructor",
+      "complaints": "Complaints and Suggestions",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "settings": {
+      "image": "Profile Picture ",
+      "new_image": "Upload New Image",
+      "save": "Save Changes",
+      "change": "Change Password",
+      "email": "Email",
+      "old_password": "Current Password",
+      "new_password": "New Password",
+      "update": "Update Password ",
+      "messages": {
+        "loading1": "Changing profile picture...",
+        "success1": "Profile picture changed successfully ✅",
+        "error": "Please choose an image first 😓",
+        "error1": "An error occurred while changing profile picture, please try again 😓",
+        "loading2": "Changing password...",
+        "success2": "Password changed successfully ✅",
+        "error2": "Failed to change password, please try again 😓"
+      }
+    },
+    "term": {
+      "title": "Terms of Use",
+      "text": "Introduction:",
+      "introduction": "Welcome to our educational platform. These terms define the rules and conditions governing the use of the platform and its educational services. Please read these terms carefully before using the platform. By using it, you agree to be bound by these terms.",
+      "definitions": "Definitions:",
+      "platform": "Platform: Refers to the website that provides access to courses and educational content.",
+      "user": "User: Any person who registers or uses the platform's services, whether a learner or an instructor.",
+      "services": "Services: Includes all educational and interactive features provided by the platform.",
+      "content": "Content: Includes all materials and information created, uploaded, or shared through the platform, whether by the user or the platform itself.",
+      "platform_use": "Platform Use:",
+      "registration": "Registration: The user must provide accurate and truthful information when creating their account.",
+      "responsibility": "Responsibility: The user is responsible for maintaining the confidentiality of their account data and not sharing it with others.",
+      "legal_use": "Legal Use: It is prohibited to use the platform for any illegal or harmful activity.",
+      "intellectual_property_rights": "Intellectual Property Rights:",
+      "ownership": "Ownership: All rights related to the platform, its content, and services are owned by us or our licensors.",
+      "personal_use": "Personal Use: The platform may only be used for personal educational purposes, and content may not be redistributed for commercial purposes.",
+      "liability": "Liability:",
+      "disclaimer": "Disclaimer: We are not responsible for any direct or indirect damage resulting from the use of the platform.",
+      "edit": "Amendments:",
+      "modifications": "We reserve the right to amend these terms at any time. Amendments will be published here, and your continued use of the platform after amendments constitutes implied consent.",
+      "contact": "Contact Us:",
+      "contact_us": "For any inquiries or feedback regarding the terms of use, please contact us via "
+    },
+    "privacy": {
+      "text": "Privacy Policy",
+      "title": "Introduction:",
+      "introduction": "We are committed to protecting your privacy and ensuring the security of your personal information. This policy explains how we collect, use, and share information when you use our educational platform.",
+      "collected_information": "Information We Collect",
+      "personal_information": "Upon registration, we may ask you to provide personal information such as your name, email address, phone number, and password.",
+      "usage_data": "We collect information about how you use the platform, such as the courses you enrolled in and educational activities you engaged in.",
+      "usage_of_information": "How Information Is Used:",
+      "service_provision": " Service Provision: We use your data to create your account and provide technical support.",
+      "platform_improvement": "Platform Improvement: We analyze usage data to enhance your experience and develop our services.",
+      "communication": "Communication with You: We may contact you regarding platform updates or to respond to your inquiries.",
+      "information_sharing": "Information Sharing:",
+      "service_providers": "Service Providers: We may share your data with trusted providers who help us operate the platform, such as cloud hosting services.",
+      "security": "Data Security:",
+      "data_security": "We take appropriate measures to protect your personal data from unauthorized access, disclosure, alteration, or deletion.",
+      "your_rights": "Your Rights:",
+      "title1": "Request to view your personal data.",
+      "title2": "Request correction of any inaccurate information.",
+      "title3": "Request deletion of your data from our system.",
+      "title4": "Object to any automated decisions made based on your data.",
+      "policy_changes": "Amendments to the Privacy Policy:",
+      "text1": "We reserve the right to amend this policy from time to time. Any changes will be published on this page.",
+      "contact_us": "Contact Us:",
+      "contact": "If you have any inquiries about the privacy policy, you can contact us.",
+      "whats": "via WhatsApp"
+    },
+    "message": {
+      "comments": {
+        "add": "Your comment has been submitted successfully! It will be reviewed by the administration and appear soon.",
+        "error": "Failed to submit comment",
+        "delete": "Comment deleted",
+        "error_delete": "Failed to delete comment"
+      },
+      "Complaints": {
+        "add": " Thank you! The administration will respond soon.",
+        "error": " Failed to send complaint. Please try again."
+      },
+      "registration": {
+        "error": "Please enter personal information correctly",
+        "loading": "Creating account...",
+        "send": " A verification code has been sent to your email, please enter it in the field below ",
+        "code": "Verifying entered code...",
+        "success": "Account created successfully!",
+        "error_register": "Failed to create account, please try again",
+        "resend": "Resending code...",
+        "done_send": "Code sent again"
+      },
+      "login_message": {
+        "error": "Please enter email and password correctly",
+        "loading": "Logging in...",
+        "send": " A verification code has been sent to your email, please enter it in the field below ",
+        "code": "Verifying entered code...",
+        "success": "Logged in successfully!",
+        "error_register": "Login failed",
+        "resend": "Resending code...",
+        "done_send": "Code sent again"
+      },
+      "forget_message": {
+        "loading": "Sending verification code...",
+        "send": " A verification code has been sent to your email, please enter it in the field below ",
+        "error_code": "This email address is not in our records",
+        "code": "Verifying entered code...",
+        "success": "Password changed successfully!"
+      }
+    },
+    "pages": {
+      "Home": "H Platform | Online Learning & Skill Development for Kids & Teens",
+      "About": "About H Platform | Our Vision & Mission for Children's Education",
+      "Courses": "H Platform Courses | Online Programs for Kids & Youth Skill Enhancement",
+      "Curriculum": "H Platform Curricula | Arabic, English, Math, Mental Math Lessons for Children",
+      "offer": "H Platform Offers | Educational Packages & Discounts for Kids & Teens Courses",
+      "FAQ": "FAQ | All You Need to Know About Children's Education at H Platform",
+      "login": "Login to H Platform Educational Platform",
+      "terms": "Terms of Use for H Platform Educational Platform",
+      "privacy": "Privacy Policy for H Platform User Data",
+      "Register": "Create a New Account on H Platform Educational Platform",
+      "Home_description": "Unlock your children's potential with H Platform's smart learning. We offer engaging courses and interactive content to develop their fundamental skills and prepare them for a promising future and advanced academic stages.",
+      "About_description": "H Platform is a leading educational community guiding your children towards excellence. We create a comprehensive digital learning experience that empowers them with tools and knowledge to confidently progress from idea to academic and skill-based achievement.",
+      "Courses_description": "Explore a wide range of innovative training courses at H Platform, specially designed to foster children's and young learners' skills, and enhance their academic and creative abilities with expert instructors.",
+      "Curriculum_description": "H Platform provides comprehensive educational curricula for children and young learners in core subjects like Arabic, English, Mathematics, and Mental Math, tailored to suit all age and educational levels.",
+      "offer_description": "Benefit from H Platform's special educational packages, exclusively designed for your children. Get exclusive offers and discounts to help them achieve their educational goals and develop their skills flexibly and affordably."
+    }
+  }
+}
