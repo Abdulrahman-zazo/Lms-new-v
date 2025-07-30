@@ -29,7 +29,7 @@ const HeroHomeClient = ({
   const MotionLink = motion.a;
 
   return (
-    <div className="bg-primary py-12 px-8 md:p-12 rounded-3xl shadow-xl text-white relative overflow-hidden w-[90%] max-w-[1240px] mx-auto mt-20 sm:mt-24 mb-2 sm:mb-8">
+    <div className="bg-primary py-10 px-8 md:p-12 rounded-3xl shadow-xl text-white relative overflow-hidden w-[90%] max-w-[1240px] mx-auto mt-20 sm:mt-18 mb-2 sm:mb-8">
       {/* Background Icons with motion */}
       <div className="inline lg:hidden">
         <motion.div
@@ -106,7 +106,7 @@ const HeroHomeClient = ({
             target="_blank"
             rel="noopener noreferrer"
             title={texts.button}
-            className="bg-white text-primary font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base cursor-pointer"
+            className="bg-white text-primary font-semibold px-2 md:px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base cursor-pointer"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4, ease: "backOut" }}

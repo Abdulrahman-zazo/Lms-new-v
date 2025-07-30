@@ -21,7 +21,7 @@ const HeroHeaderClient = ({
   const { data } = useGetContactQuery();
 
   return (
-    <div className="bg-primary p-8 md:p-16 rounded-3xl shadow-xl text-white relative overflow-hidden max-w-[90%] xl:max-w-[1240px] mx-auto mb-6 mt-20 sm:mt-24">
+    <div className="bg-primary px-4 py-8 md:p-16 rounded-3xl shadow-xl text-white relative overflow-hidden max-w-[90%] xl:max-w-[1240px] mx-auto mb-6 mt-20 sm:mt-24">
       {/* Background Icons */}
       <motion.div
         className="absolute -left-5 bottom-6 opacity-20"
@@ -72,7 +72,7 @@ const HeroHeaderClient = ({
           {title}
         </motion.h1>
         <motion.p
-          className="text-xs md:text-base mb-4 md:mb-8 max-w-xl mx-auto hidden sm:block"
+          className="text-xs md:text-base mb-4 md:mb-8 max-w-xl mx-auto font-light sm:block"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -89,7 +89,7 @@ const HeroHeaderClient = ({
           target={!onButtonClick ? "_blank" : undefined}
           rel={!onButtonClick ? "noopener noreferrer" : undefined}
           onClick={onButtonClick}
-          className="bg-white text-primary font-medium md:font-semibold px-4 md:px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300 text-sm md:text-base cursor-pointer"
+          className="bg-white text-primary font-medium md:font-semibold px-2 md:px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300 text-xs md:text-base cursor-pointer"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4, ease: "backOut" }}

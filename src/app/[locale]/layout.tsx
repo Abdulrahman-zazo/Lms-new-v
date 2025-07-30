@@ -50,6 +50,9 @@ export async function generateMetadata(): Promise<Metadata> {
       defaultValue:
         "في عالم يتغير بسرعة، لم يعد التعلم وحده كافيًا بل يجب أن تتميّز. منصة H ليست مجرد أداة تعليمية؛ إنها الجسر الذي يربط بين أحلامك والواقع.",
     }),
+    alternates: {
+      canonical: "https://h-platform.online", // ضع رابط موقعك هنا
+    },
     openGraph: {
       title: t("pages.Home"),
       description: t("pages.Home_description"),

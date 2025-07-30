@@ -15,10 +15,10 @@ import { useLocale } from "next-intl";
 import { AuthProvider } from "./AuthContext";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+// import MyStatsig from "@/app/my-statsig";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("translation");
-
   return {
     title: t("pages.Home", { defaultValue: "H Platform - الصفحة الرئيسية" }),
     description: t("pages.Home_description", {
@@ -79,7 +79,10 @@ export default function MainLayout({ children, token }: MainLayoutProps) {
           onClose={() => dispatch(closeModal())}
         />
         <ScrollToTop />
+        {/* <MyStatsig> */}
         <main>{children}</main>
+        {/* </MyStatsig> */}
+
         <FloatingButton lang={local} contact={data?.Contact[0] || {}} />
         <Footer contact={data?.Contact[0] || {}} />
       </AuthProvider>

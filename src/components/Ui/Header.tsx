@@ -107,7 +107,7 @@ const Header = () => {
         {menuOpen && (
           <div className="lg:hidden mt-3 bg-white rounded-md shadow px-4 py-3 space-y-2">
             {/* Links */}
-            <nav className="flex flex-col text-xs font-medium text-gray-700 space-y-2">
+            <nav className="flex flex-col text-sm font-medium text-gray-700 space-y-3">
               <Link href={"/"} onClick={() => setMenuOpen(false)}>
                 {t("Header.Home")}
               </Link>
@@ -141,7 +141,7 @@ const Header = () => {
             </nav>
 
             {!token && (
-              <div className="flex flex-col gap-2 pt-4">
+              <div className="flex flex-col gap-3 text-sm md:text-base pt-4">
                 <Link href={"/login"} onClick={() => setMenuOpen(false)}>
                   {t("Header.login")}
                 </Link>
