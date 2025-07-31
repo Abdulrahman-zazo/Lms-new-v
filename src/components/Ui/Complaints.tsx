@@ -1,8 +1,10 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-export default async function ComplaintsSections() {
-  const t = await getTranslations("translation");
+export default function ComplaintsSections() {
+  const t = useTranslations("translation");
   return (
     <>
       <section className="max-w-[1440px] mx-auto px-4 sm:px-8 py-8 sm:py-16  ">

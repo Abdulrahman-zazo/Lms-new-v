@@ -3,7 +3,11 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["res.cloudinary.com", "backend.h-platform.online"],
+    domains: [
+      "res.cloudinary.com",
+      "backend.h-platform.online",
+      "lh3.googleusercontent.com",
+    ],
   },
   async headers() {
     return [
