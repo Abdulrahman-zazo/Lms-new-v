@@ -6,5 +6,8 @@ export default createIntlMiddleware({
 });
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: [
+    // تخطى كل المسارات الداخلية وملفات الـ static
+    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest|robots.txt|sitemap.xml).*)",
+  ],
 };
