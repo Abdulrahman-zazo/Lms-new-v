@@ -5,20 +5,44 @@ import GetStarted from "@/components/Ui/GetStarted";
 import WhyDifferentSection from "@/components/Ui/WhyDifferent";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Suspense } from "react";
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("translation");
-
+  const locale = await getLocale();
   return {
     title: t("pages.offer", { defaultValue: "H-Platform - العروض" }),
     description: t("pages.Home_description", {
       defaultValue:
         "  استفد من باقاتنا التعليمية المصممة بعناية لمساعدتك على تحقيق أهدافك بطريقة مرنة وبسعر أقل! اختر العرض الذي يناسب اهتماماتك وابدأ التعلم اليوم.",
     }),
-    icons: {
-      icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
-      apple: [{ url: "/apple-icon.png" }],
+    alternates: {
+      canonical: `https://h-platform.online/${locale}/offers`,
+      languages: {
+        ar: "https://h-platform.online/ar/offers",
+        en: "https://h-platform.online/en/offers",
+      },
+    },
+    openGraph: {
+      title: t("pages.offer"),
+      description: t("pages.Home_description"),
+      url: `https://h-platform.online/${locale}/offers`,
+      type: "website",
+      siteName: "H Platform",
+      images: [
+        {
+          url: "https://www.h-platform.online/scema.png",
+          width: 1200,
+          height: 630,
+          alt: "H Platform offers Preview",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("pages.offer"),
+      description: t("pages.Home_description"),
+      images: [{ url: "https://www.h-platform.online/scema.png" }],
     },
   };
 }

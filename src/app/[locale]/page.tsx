@@ -10,20 +10,6 @@ import HowItWorksSection from "@/components/Ui/HowItWorks";
 import FaqSection from "@/components/Ui/FAQ";
 import GetStarted from "@/components/Ui/GetStarted";
 
-import { getTranslations } from "next-intl/server";
-import type { Metadata } from "next";
-
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("translation");
-
-  return {
-    title: t("pages.Home", { defaultValue: "H Platform - الصفحة الرئيسية" }),
-    description: t("pages.Home_description", {
-      defaultValue:
-        "في عالم يتغير بسرعة، لم يعد التعلم وحده كافيًا بل يجب أن تتميّز. منصة H ليست مجرد أداة تعليمية؛ إنها الجسر الذي يربط بين أحلامك والواقع.",
-    }),
-  };
-}
 const HomePage = () => {
   const t = useTranslations("translation");
 

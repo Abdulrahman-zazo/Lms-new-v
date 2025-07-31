@@ -9,7 +9,6 @@ const HeaderCourseClient = ({
   description,
   hours,
   type,
-
   isRTL,
   whatsappMessage,
   enrollText,

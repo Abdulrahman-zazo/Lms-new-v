@@ -5,20 +5,44 @@ import GetStarted from "@/components/Ui/GetStarted";
 import WhyDifferentSection from "@/components/Ui/WhyDifferent";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Suspense } from "react";
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("translation");
-
+  const locale = await getLocale();
   return {
     title: t("pages.Curriculum", { defaultValue: "H-Platform - المناهج" }),
     description: t("pages.Curriculum_description", {
       defaultValue:
         "في عالم يتغير بسرعة، لم يعد التعلم وحده كافيًا بل يجب أن تتميّز. منصة H  ليست مجرد أداة تعليمية؛ إنها الجسر الذي يربط بين أحلامك والواقع.",
     }),
-    icons: {
-      icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
-      apple: [{ url: "/apple-icon.png" }],
+    alternates: {
+      canonical: `https://h-platform.online/${locale}/curricula`,
+      languages: {
+        ar: "https://h-platform.online/ar/curricula",
+        en: "https://h-platform.online/en/curricula",
+      },
+    },
+    openGraph: {
+      title: t("pages.Curriculum"),
+      description: t("pages.Curriculum_description"),
+      url: `https://h-platform.online/${locale}/curricula`,
+      type: "website",
+      siteName: "H Platform",
+      images: [
+        {
+          url: "https://www.h-platform.online/scema.png",
+          width: 1200,
+          height: 630,
+          alt: "H Platform Curriculum Preview",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("pages.Curriculum"),
+      description: t("pages.Curriculum_description"),
+      images: [{ url: "https://www.h-platform.online/scema.png" }],
     },
   };
 }
