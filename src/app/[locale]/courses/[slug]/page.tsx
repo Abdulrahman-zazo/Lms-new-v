@@ -5,9 +5,11 @@ import HeaderCourse from "@/components/HeaderCourse";
 import { Reviews } from "@/components/Reviews";
 import SkeletonCustom from "@/components/Skeleton";
 import ComplaintsSections from "@/components/Ui/Complaints";
+import { useGetContactQuery } from "@/lib/Redux/features/Contacts/contactApi";
 import { useGetCourseByIdQuery } from "@/lib/Redux/features/Courses/CoursesApi";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
@@ -19,7 +21,10 @@ const CoursePage = () => {
 
   const { data, isLoading, isError } = useGetCourseByIdQuery(id || "");
   const t = useTranslations("translation");
-
+  const whatsappMessage = encodeURIComponent(
+    `مرحبًا،\nأرغب بالحصول على مزيد من التفاصيل حول كورس "${data?.course.name}".\nهل ما زال التسجيل متاحًا؟ وما هي المواعيد والتكاليف؟\nشكرًا لكم.`
+  );
+  const { data: ContactsData } = useGetContactQuery();
   if (isLoading) {
     return <SkeletonCustom type="list" />;
   }
@@ -116,13 +121,14 @@ const CoursePage = () => {
               <li>{data?.course.requirements}</li>
             </ul>
 
-            <button
+            <Link
+              href={`https://wa.me/${ContactsData?.Contact[0]?.whatsapp_num}?text=${whatsappMessage}`}
               title={t("Courses.button_free")}
-              aria-label={t("Courses.button_free")}
-              className="w-full bg-primary text-sm md:text-base text-white py-3 px-4 rounded-md hover:bg-primary/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50"
+              target="_blank"
+              className="w-full bg-primary text-sm md:text-base text-white py-3 px-4 rounded-md hover:bg-primary/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 cursor-pointer"
             >
               {t("Courses.button_free")}
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -29,6 +29,10 @@ const Curricula = () => {
   >(null);
   const [stages, setStages] = useState<Stage[]>([]);
   const [selectedStageId, setSelectedStageId] = useState<number | null>(null);
+  const [selectedCurriculumName, SetselectedCurriculumName] = useState({
+    nameStage: "",
+    nameCurricula: "",
+  });
   const [displayedSubjects, setDisplayedSubjects] = useState<Subject[]>([]);
 
   // --- 3. useEffect لضبط الحالة الأولية بعد جلب البيانات ---
@@ -45,6 +49,11 @@ const Curricula = () => {
         const initialStage = initialStages[0];
         setSelectedStageId(initialStage.id);
 
+        SetselectedCurriculumName({
+          nameCurricula: initialCurriculum.name,
+          nameStage: initialStage.name,
+        });
+
         const initialPivot = initialCurriculum.pivot.find(
           (p) => p.stage.id === initialStage.id
         );
@@ -52,7 +61,6 @@ const Curricula = () => {
       }
     }
   }, [curricula, selectedCurriculumId]);
-
   // --- 4. دوال التعامل مع التغيير (تبقى كما هي) ---
   const handleCurriculumChange = (
     event: React.ChangeEvent<HTMLSelectElement>
@@ -197,7 +205,7 @@ const Curricula = () => {
                     {subject.name}
                   </h3>
                   <a
-                    href={`https://wa.me/${contact?.whatsapp_num}`}
+                    href={`https://wa.me/${contact?.whatsapp_num}?text=استفسار حول جلسات مادة ${subject.name} , من منهاج ${selectedCurriculumName.nameCurricula} , للمرحلة الدراسية ${selectedCurriculumName.nameStage} `}
                     title={t("curricula.button")}
                     className="..."
                   >

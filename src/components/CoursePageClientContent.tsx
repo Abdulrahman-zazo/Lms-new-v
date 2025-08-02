@@ -8,15 +8,21 @@ import { CourseInfo } from "./CourseInfo";
 import { Reviews } from "./Reviews";
 import ComplaintsSections from "./Ui/Complaints";
 import Image from "next/image";
+import { useGetContactQuery } from "@/lib/Redux/features/Contacts/contactApi";
+import Link from "next/link";
 // ... باقي الـ imports
 
 // هذا المكون لا يجلب بيانات، فقط يعرضها وينظمها
 const CoursePageClientContent = ({ course }: { course: ICourse }) => {
   const [activeTab, setActiveTab] = useState("info");
   const t = useTranslations("translation");
-
+  // 2. تجهيز البيانات لتمريرها
+  const whatsappMessage = encodeURIComponent(
+    `مرحبًا،\nأرغب بالحصول على مزيد من التفاصيل حول كورس "${course.name}".\nهل ما زال التسجيل متاحًا؟ وما هي المواعيد والتكاليف؟\nشكرًا لكم.`
+  );
   // ... كل الـ JSX الخاص بالتابات ومحتوى الكورس يوضع هنا
   // ... استخدم `courseData` بدلاً من `data`
+  const { data } = useGetContactQuery();
   return (
     <div className="flex justify-center my-8">
       <div className="flex justify-center my-8">
@@ -96,13 +102,14 @@ const CoursePageClientContent = ({ course }: { course: ICourse }) => {
               <li>{course.requirements}</li>
             </ul>
 
-            <button
+            <Link
+              href={`https://wa.me/${data?.Contact[0]?.whatsapp_num}?text=${whatsappMessage}`}
               title={t("Courses.button_free")}
-              aria-label={t("Courses.button_free")}
-              className="w-full bg-primary text-sm md:text-base text-white py-3 px-4 rounded-md hover:bg-primary/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50"
+              target="_blank"
+              className="w-full bg-primary text-sm md:text-base text-white py-3 px-4 rounded-md hover:bg-primary/50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 cursor-pointer"
             >
               {t("Courses.button_free")}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
