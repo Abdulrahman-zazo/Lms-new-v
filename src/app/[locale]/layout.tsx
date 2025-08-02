@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import MainLayout from "@/components/MainLayout";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
+import Script from "next/script";
 
 export async function generateMetadata({
   params,
@@ -70,6 +71,22 @@ export default async function LocaleLayout({
 
   return (
     <div lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-5XS7QNMM70"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5XS7QNMM70');
+    `,
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
