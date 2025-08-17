@@ -78,6 +78,27 @@ async function generateAndSaveSitemap() {
         { lang: "en", href: `${baseUrl}/en/about-us` },
       ],
     },
+
+    {
+      url: `${baseUrl}/ar/offers`,
+      changefreq: "daily",
+      priority: 0.8,
+      lastmod: lastModified,
+      alternates: [
+        { lang: "en", href: `${baseUrl}/en/offers` },
+        { lang: "ar", href: `${baseUrl}/ar/offers` },
+      ],
+    },
+    {
+      url: `${baseUrl}/en/offers`,
+      changefreq: "daily",
+      priority: 0.8,
+      lastmod: lastModified,
+      alternates: [
+        { lang: "ar", href: `${baseUrl}/ar/offers` },
+        { lang: "en", href: `${baseUrl}/en/offers` },
+      ],
+    },
   ];
 
   try {

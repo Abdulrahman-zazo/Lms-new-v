@@ -19,7 +19,7 @@ const GetStarted = () => {
           <Link
             aria-label={t("Get_started.title3")}
             title={t("Get_started.title3")}
-            href={"//login"}
+            href={"/login"}
             className="bg-primary  text-white text-sm sm:text-base px-8 py-4 my-4 rounded hover:bg-primary/80 transition"
           >
             {t("Get_started.title3")}🚀!
